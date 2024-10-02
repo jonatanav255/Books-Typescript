@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button id="showAddBookButton">Add Book</button>
+        <button id="showAllBooksButton">Show All Books</button>
+    </nav>
+
+    <!-- Page for Adding Books -->
+    <div id="addBookPage" class="page">
+        <h1>Add a New Book</h1>
+        <form id="addBookForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required><br><br>
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" required><br><br>
+
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+
+    <!-- Page for Showing All Books -->
+    <div id="showAllBooksPage" class="page" style="display: none;">
+        <h1>All Books</h1>
+        <ul id="booksList"></ul>
+    </div>
+
+    <script src="../dest/index.js"></script>
+</body>
+</html>
